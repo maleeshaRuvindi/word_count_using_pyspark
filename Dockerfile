@@ -8,8 +8,7 @@ RUN apt-get update && apt-get install -y \
     bzip2 \
     ca-certificates \
     git \
-    openjdk-11-jdk && \
-    procps && \  
+    openjdk-11-jdk && \ 
     rm -rf /var/lib/apt/lists/*
 
 # Set JAVA_HOME environment variable

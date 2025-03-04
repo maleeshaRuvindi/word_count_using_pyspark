@@ -27,6 +27,7 @@ jobs:
 
       - name: Run Tests
         run: |
+          export PYTHONPATH=$PYTHONPATH:$(pwd)
           pytest tests/
 
       - name: Login to Docker Hub

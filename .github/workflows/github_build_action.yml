@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install pytest pyspark pyyaml pandas
+          pip install pytest pyspark pyyaml pandas pyarrow datasets
 
       - name: Run Tests
         run: |

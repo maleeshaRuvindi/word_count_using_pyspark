@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.dll
+
+# Virtual environment
+venv/
+.env/
+.venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and debugging
+logs/
+*.log
+*.out
+*.err
+
+# Config and secrets
+
+*.env
+
+
+# Cache files
+.cache/
+.pytest_cache/
+
+# Data files
+data/
+*.parquet
+*.csv
+*.json
+
+# PySpark
+metastore_db/
+derby.log
+
+# Docker
+docker-compose.override.yml
+.DS_Store
+*.swp
+
+# VS Code & IDE
+.vscode/
+.idea/
+*.iml
+
+# GitHub Actions artifacts
+.github/workflows/*.log
+.github/workflows/*.cache
+
+# Docker ignore
+.dockerignore

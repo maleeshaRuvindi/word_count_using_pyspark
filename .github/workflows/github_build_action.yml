@@ -13,6 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Install Java (for PySpark)
+        run: sudo apt-get install -y openjdk-11-jdk
+
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
@@ -20,7 +23,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install pytest pyspark
+          pip install pytest pyspark pyyaml pandas
 
       - name: Run Tests
         run: |

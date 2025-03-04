@@ -41,7 +41,7 @@ def test_process_data_functions(spark, sample_config, monkeypatch, func, output_
     sample_data = pd.DataFrame({"description": ["The president of Asia spoke.", "The economy is growing."]})
 
     # Patch dataset loader
-    monkeypatch.setattr("src.my_pyspark_script.load_dataset", lambda url, split: sample_data)
+    monkeypatch.setattr("src.run.load_dataset", lambda url, split: sample_data)
 
     # Run processing function
     func(config)

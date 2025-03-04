@@ -4,7 +4,7 @@ import os
 import pandas as pd
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
-from src.run.py import load_config, process_data, process_data_all
+from src.run import load_config, process_data, process_data_all
 
 @pytest.fixture(scope="session")
 def spark():
